@@ -61,6 +61,8 @@ while True:
             xRightTop   = int(detections[0, 0, i, 5] * cols)
             yRightTop   = int(detections[0, 0, i, 6] * rows)
 
+            print(xLeftBottom)
+
             # Factor for scale to original size of frame
             heightFactor = frame.shape[0]/300.0
             widthFactor = frame.shape[1]/300.0
